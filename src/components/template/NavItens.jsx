@@ -1,7 +1,8 @@
 import './NavItens.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default props =>
-    <a href={props.nav}>
+    <Link to={props.nav}>
         <i className={`fa fa-${props.icon}`}>{props.title}</i>
-    </a>
+    </Link>
