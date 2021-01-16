@@ -1,14 +1,11 @@
 import './Nav.css'
 import React from 'react'
+import Links from './NavItens'
 
 export default props =>
     <aside className="menu-area">
         <na className="menu">
-            <a href="#/">
-                <i className="fa fa-home"></i> Início
-            </a>
-            <a href="#/users">
-                <i className="fa fa-users"></i> Usuários
-            </a>
+            <Links title="Home" icon="home" nav="#/"></Links>
+            <Links title="Usuários" icon="users" nav="#/users"></Links>
         </na>
     </aside>
